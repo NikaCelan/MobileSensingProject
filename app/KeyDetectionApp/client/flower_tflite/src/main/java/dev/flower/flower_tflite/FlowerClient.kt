@@ -79,7 +79,7 @@ class FlowerClient<X : Any, Y : Any>(
      * @return [List] of average training losses for each epoch.
      */
     fun fit(
-        epochs: Int = 5, batchSize: Int = 10, lossCallback: ((List<Float>) -> Unit)? = null
+        epochs: Int = 10, batchSize: Int = 1, lossCallback: ((List<Float>) -> Unit)? = null
     ): List<Double> {
         Log.d(TAG, "Starting to train for $epochs epochs with batch size $batchSize.")
         // Obtain write lock to prevent training samples from being modified.

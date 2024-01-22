@@ -92,8 +92,7 @@ def main():
     
 def fit_config(server_round: int):
     config = {
-        "batch_size": 10,
-        "local_epochs": 5,
+        "local_epochs": 20,
     }
     return config
 
